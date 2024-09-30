@@ -50,7 +50,7 @@ def main():
             for shot in shots:
                 if asteroid.is_colliding(shot):
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
         
         #fill screen with black color
         screen.fill((0,0,0))
